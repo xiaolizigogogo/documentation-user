@@ -175,11 +175,15 @@ staging branches as the emails of your production database are really sent inste
 
 Shell
 -----
-A shell access to your container. You can perform basic linux command (:code:`ls`, :code:`top`)
+A shell access to your container. You can perform basic linux commands (:code:`ls`, :code:`top`)
 and open a shell on your database by typing :code:`psql`.
 
 .. image:: ./media/interface-branches-shell.png
    :align: center
+
+In development and staging builds, you are allowed to edit the files of the current build directly from the shell. Please note that these changes won't be propagated to a new build, you must commit them in your source code if you want to make them persist.
+
+For security reasons, you cannot edit directly the source files of your production build through the shell. You must commit your changes on your local computer, then push them.
 
 You can open multiple tabs and drag-and-drop them to arrange the layout as you wish,
 for instance side by side.
