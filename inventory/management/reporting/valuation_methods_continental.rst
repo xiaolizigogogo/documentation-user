@@ -351,6 +351,93 @@ Let's take the case of a reseller.
      
    - Inventory: to set as Stock Valuation Account in product's internal category
 
+
+More Technically ...
+======================
+
+The following chapter is more technical and explains how specific elements are computed.
+Basically the elements below are computed for a product.product not for a product.template.
+When calculated for different elements, it may differs.
+
+On Hand quantities
+^^^^^^^^^^^^^^^^^^^
+- For product.product
+  TODO:
+- For product.template
+  TODO:
+
+Inventory Valuation (Current Inventory)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+This is specified in odoo/addons/stock_account/models/product.py mostly in the method _compute_stock_value()
+
+- Fifo Manual
+  TODO:
+- Fifo Automated
+  The quantity is the sum of the quantity for stock.move of this product with a specific domain.
+  The value is the sum of the quantity for stock.move of this product with a specific domain.
+
+  The domain is defined in odoo/addons/stock_account/models/stock.py in the method _get_all_base_domain and basically looks like
+
+  - Odoo style:
+  ```
+          domain = [
+            ('state', '=', 'done'),
+            '|',
+                '&',
+                    '|',
+                        ('location_id.company_id', '=', False),
+                        '&',
+                            ('location_id.usage', 'in', ['inventory', 'production']),
+                            ('location_id.company_id', '=', company_id or self.env.user.company_id.id),
+                    ('location_dest_id.company_id', '=', company_id or self.env.user.company_id.id),
+                '&',
+                    ('location_id.company_id', '=', company_id or self.env.user.company_id.id),
+                    '|',
+                        ('location_dest_id.company_id', '=', False),
+                        '&',
+                            ('location_dest_id.usage', '=', 'inventory'),
+                            ('location_dest_id.company_id', '=', company_id or self.env.user.company_id.id),
+  ```
+
+  - SQL style: (need double check)
+  ```
+  SELECT stock_move.product_id,SUM(COALESCE(stock_move.qty)), SUM(COALESCE(stock_move.remaining_value, 0.0)), ARRAY_AGG(stock_move.id)
+	            FROM "stock_location" as "stock_move__location_id","stock_location" as "stock_move__location_dest_id","stock_move"
+	            WHERE ("stock_move"."location_dest_id"="stock_move__location_dest_id"."id" AND "stock_move"."location_id"="stock_move__location_id"."id") AND 
+	            (
+		            	(
+			            	("stock_move"."product_id" in (34189))  AND
+				            ("stock_move"."state" = 'done')
+				        )
+				     AND
+		            (
+		            	(
+		            		("stock_move__location_id"."company_id" IS NULL   OR
+				            	(	("stock_move__location_id"."usage" in ('inventory','production'))  AND  ("stock_move__location_id"."company_id" = 1))
+		            		)  AND
+		            		("stock_move__location_dest_id"."company_id" = 1)
+		            	)
+		            	OR
+		            	(
+		            		("stock_move__location_id"."company_id" = 1)  AND ("stock_move__location_dest_id"."company_id" IS NULL
+		            			OR
+		            		(("stock_move__location_dest_id"."usage" = 'inventory')  AND  ("stock_move__location_dest_id"."company_id" = 1)))
+		            	)
+	            	)
+	            )
+	            AND ("stock_move"."company_id" IS NULL   OR  ("stock_move"."company_id" in (1)))
+	            GROUP BY stock_move.product_id
+
+  ```
+Inventory Valuation (At a Specific Date)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+This is specified in odoo/addons/stock_account/models/product.py mostly in the method _compute_stock_value()
+- Fifo Manual:
+  TODO:
+- Fifo Automated:
+  The quantity is computed from the Inventory Valuation (Current Inventory). If the quantity is negative or null the line is not displayed.
+  The value is computed from the account.move.lines and is simply the sum balances of all the account.move.lines where the account is the valuation account of the product.
+
 .. seealso::
 
   * :doc:`../../routes/strategies/removal`
