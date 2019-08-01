@@ -305,10 +305,10 @@ odoo_cover_external = {
 
 github_user = 'odoo'
 github_project = 'documentation-user'
-
+language = 'zh_CN'
 # Where are stored the localisations files
 locale_dirs = ['locale/']
-
+getext_compact = False
 LANGUAGES = {
     'de': 'German',
     'en': 'English',
