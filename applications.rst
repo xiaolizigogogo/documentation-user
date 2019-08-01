@@ -5,20 +5,33 @@ Applications
 .. toctree::
    :titlesonly:
 
-   accounting
+accounting
+=============
+
    crm
    sales
-   website
-   ecommerce
-   discuss
+website
+=============
+ecommerce
+=============
+discuss
+=============
    purchase
    inventory
-   manufacturing
-   point_of_sale
+manufacturing
+=============
+point_of_sale
+=============
    project
-   helpdesk
-   livechat/livechat
-   expense/expense
-   general
-   iot
-   mobile/firebase
+helpdesk
+=============
+livechat/livechat
+=============
+expense/expense
+=============
+general
+=============
+iot
+=============
+mobile/firebase
+=============
