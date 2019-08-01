@@ -7,6 +7,11 @@ file_filter = locale/<lang>/LC_MESSAGES/accounting.po
 source_file = locale/sources/accounting.pot
 source_lang = en
 
+[odoo-12-doc.employee]
+file_filter = locale/<lang>/LC_MESSAGES/employee.po
+source_file = locale/sources/employee.pot
+source_lang = en
+
 [odoo-12-doc.applications]
 file_filter = locale/<lang>/LC_MESSAGES/applications.po
 source_file = locale/sources/applications.pot
