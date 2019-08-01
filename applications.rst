@@ -10,6 +10,7 @@ Applications
    purchase
    inventory
    project
+   employee
 
 accounting
 =============
