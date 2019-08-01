@@ -1,41 +1,14 @@
 ===============================
-Introduction to Odoo Accounting
+介绍员工模块
 ===============================
 
-.. youtube:: 6XgKPjgyoec
-    :align: right
-    :width: 700
-    :height: 394
-
-Transcript
+员工分类
 ==========
 
-Odoo is beautiful accounting software designed for the needs of the 21st century. 
+系统中包含两种员工：需要登录系统的操作员工、不需要登录系统的员工。
 
-Odoo connects directly to your bank or paypal account. Transactions are synchronized
-every hour and reconciliation is blazing fast. It's like magic.
+需要登录系统的员工：此类员工需要关联系统中的用户模块，并配置权限用以登录并操作浏览相对应的功能。
 
-Instantly create invoices and send them with just a click. No need to print them. 
+不需要登录系统的员工：管理人员对员工进行各种事项的记录及统计。(例：出勤、请假、工作效率等）
 
-Odoo can send them for you by email or regular mail.
 
-Your customers pay online, meaning you get your money right away.
-
-Odoo accounting is connected with all Odoo our apps such as sale, purchase,
-inventory and subscriptions. 
-
-This way, recording vendor bills is also super quick. Set a vendor, select the purchase
-order and Odoo fills in everything for you automatically.
-
-Then, just use the SEPA protocol or print checks to pay vendors
-in batches.
-
-It's that easy with Odoo.
-
-Wait, there is more. You will love the Odoo reports. From legal statements to 
-executive summaries, they are fast and dynamic. Use Odoo's business intelligence feature to navigate
-through all your companies data.
-
-Of course, Odoo is mobile too. You can use it to check your accounts on the go.
-
-Try Odoo now, and join 2 million happy users.
