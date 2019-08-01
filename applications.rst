@@ -4,6 +4,7 @@ Applications
 
 .. toctree::
    :titlesonly:
+
    crm
    sales
    purchase
