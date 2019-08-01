@@ -4,25 +4,24 @@ Applications
 
 .. toctree::
    :titlesonly:
+   crm
+   sales
+   purchase
+   inventory
+   project
 
 accounting
 =============
-
-   crm
-   sales
 website
 =============
 ecommerce
 =============
 discuss
 =============
-   purchase
-   inventory
 manufacturing
 =============
 point_of_sale
 =============
-   project
 helpdesk
 =============
 livechat/livechat
