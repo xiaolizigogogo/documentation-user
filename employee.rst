@@ -1,7 +1,7 @@
 :banner: banners/accounting.jpg
 
 ==========
-Accounting
+Employee
 ==========
 
 .. toctree::
