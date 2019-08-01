@@ -12,6 +12,6 @@ eCommerce
    ecommerce/managing_products
    ecommerce/taxes
    ecommerce/shopper_experience
-   ecommerce/publish
+   ecommerce/publis
    ecommerce/maximizing_revenue
 

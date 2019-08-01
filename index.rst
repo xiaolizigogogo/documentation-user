@@ -1,5 +1,5 @@
 =======================
-Odoo User Documentation
+用户手册
 =======================
 
 .. rst-class:: index-tree
