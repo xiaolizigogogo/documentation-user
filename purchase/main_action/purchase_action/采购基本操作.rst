@@ -4,6 +4,7 @@
 
 创建采购订单并收货
 =====================
+
 .. html5:: http://image.yodemon.top/%E5%88%9B%E5%BB%BA%E9%87%87%E8%B4%AD%E8%AE%A2%E5%8D%95%E5%B9%B6%E6%94%B6%E8%B4%A7.mp4
     :align: right
     :width: 700

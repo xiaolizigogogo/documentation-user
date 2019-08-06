@@ -6,5 +6,6 @@
 
 .. toctree::
    :titlesonly:
+
    purchase/overview
    purchase/main_action
