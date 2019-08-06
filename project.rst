@@ -1,14 +1,11 @@
 :banner: banners/project.jpg
 
 =======
-Project
+项目
 =======
 
 .. toctree::
    :titlesonly:
 
    project/overview
-   project/configuration
-   project/planning
-   project/advanced
-   project/application
+   project/main_action

@@ -1,14 +1,11 @@
 :banner: banners/crm.jpg
 
-===
-CRM
-===
+======
+联系人
+======
 
 .. toctree::
    :titlesonly:
 
-   crm/pipeline
-   crm/acquire_leads
-   crm/track_leads
-   crm/performance
-   crm/optimize
+   crm/overview
+   crm/main_action

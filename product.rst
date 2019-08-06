@@ -1,11 +1,11 @@
 :banner: banners/inventory.jpg
 
 =========
-库存
+产品
 =========
 
 .. toctree::
    :titlesonly:
 
-   inventory/overview
-   inventory/main_action
+   product/overview
+   product/main_action

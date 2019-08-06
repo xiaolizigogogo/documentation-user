@@ -1,11 +1,8 @@
 ========
-Overview
+概述
 ========
 
 .. toctree::
    :titlesonly:
-   :glob:
 
-   overview/concepts
-   overview/start
-   overview/process
+   overview/main_concepts

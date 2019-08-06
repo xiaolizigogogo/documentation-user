@@ -61,6 +61,22 @@ class Vimeo(IframeVideo):
     class="align-%(align)s"></iframe>'
 
 
+class Bilibili(IframeVideo):
+    html = '<iframe src="http://player.bilibili.com/player.html?aid=%(video_id)s" width="%(width)u" height="%(height)u" scrolling="no" border="0" frameborder="no" framespacing="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen="true" class="align-%(align)s"></iframe>'
+
+
+class YouKu(IframeVideo):
+    html ="<iframe height='%(height)u' width='%(width)u' src='http://player.youku.com/embed/%(video_id)s' frameborder=0 allowfullscreen webkitAllowFullScreen mozallowfullscreen ></iframe>"
+
+
+class Html5(IframeVideo):
+    html = '<iframe src="%(video_id)s" width="%(width)u" height="%(height)u" scrolling="no" border="0" frameborder="no" framespacing="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen="true" class="align-%(align)s"></iframe>'
+
+
 def setup(builder):
     directives.register_directive('youtube', Youtube)
     directives.register_directive('vimeo', Vimeo)
+    directives.register_directive('bilibili', Bilibili)
+    directives.register_directive('youku', YouKu)
+    directives.register_directive('html5', Html5)
+

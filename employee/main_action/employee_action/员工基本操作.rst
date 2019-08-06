@@ -1,0 +1,18 @@
+=================
+员工基本操作
+=================
+
+
+创建员工
+=================
+.. html5:: http://image.yodemon.top/%E5%88%9B%E5%BB%BA%E9%83%A8%E9%97%A8%E4%BB%A5%E5%8F%8A%E5%AD%90%E9%83%A8%E9%97%A8.mp4
+    :align: right
+    :width: 700
+    :height: 394
+
+编辑与删除员工
+=================
+.. html5:: http://image.yodemon.top/%E5%88%9B%E5%BB%BA%E9%83%A8%E9%97%A8%E4%BB%A5%E5%8F%8A%E5%AD%90%E9%83%A8%E9%97%A8.mp4
+    :align: right
+    :width: 700
+    :height: 394

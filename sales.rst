@@ -1,14 +1,11 @@
 :banner: banners/sales.jpg
 
 =====
-Sales
+销售
 =====
 
 .. toctree::
    :titlesonly:
 
-   sales/send_quotations
-   sales/invoicing
-   sales/products_prices
-   sales/sale_ebay
-   sales/advanced
+   sales/overview
+   sales/main_action

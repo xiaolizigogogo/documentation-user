@@ -1,5 +1,5 @@
 ============
-Applications
+应用
 ============
 
 .. toctree::
@@ -11,6 +11,7 @@ Applications
    inventory
    project
    employee
+   product
 
 accounting
 =============

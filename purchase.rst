@@ -1,11 +1,10 @@
 :banner: banners/purchase.jpg
 
 ========
-Purchase
+采购
 ========
 
 .. toctree::
    :titlesonly:
-
-   purchase/purchases
-   purchase/replenishment
+   purchase/overview
+   purchase/main_action
