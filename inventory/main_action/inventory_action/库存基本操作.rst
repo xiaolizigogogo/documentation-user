@@ -5,7 +5,7 @@
 
 库存调整
 =================
-.. html5:: http://image.yodemon.top/库存调整.mp4
+.. html5:: http://image.yodemon.top/%E5%BA%93%E5%AD%98%E8%B0%83%E6%95%B4.mp4
     :align: right
     :width: 700
     :height: 394
