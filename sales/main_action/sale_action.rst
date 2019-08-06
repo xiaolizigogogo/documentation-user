@@ -5,4 +5,4 @@
 .. toctree::
    :titlesonly:
 
-   employee_action/员工基本操作
+   employee_action/销售基本操作
