@@ -1,8 +1,8 @@
 =================
-员工操作
+产品操作
 =================
 
 .. toctree::
    :titlesonly:
 
-   employee_action/员工基本操作
+   product_action/产品基本操作
