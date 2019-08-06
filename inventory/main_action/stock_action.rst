@@ -5,4 +5,4 @@
 .. toctree::
    :titlesonly:
 
-   stock_action/仓库基本仓库
+   stock_action/仓库基本操作

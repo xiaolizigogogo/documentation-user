@@ -1,8 +1,8 @@
 =================
-销售基本操作
+销售操作
 =================
 
 .. toctree::
    :titlesonly:
 
-   employee_action/销售基本操作
+   sale_action/销售基本操作

@@ -6,4 +6,3 @@
    :titlesonly:
 
    main_action/sale_action
-   main_action/employee_action

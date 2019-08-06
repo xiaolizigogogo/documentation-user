@@ -5,4 +5,4 @@
 .. toctree::
    :titlesonly:
 
-   inventory/库存基本操作
+   inventory_action/库存基本操作
